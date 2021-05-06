@@ -1,0 +1,130 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}/*Style for all auto*/
+.container{
+    width: 100%;height: 100vh;
+    background: url(./images/background-image.png);
+    background-position: center;
+    background-size: cover;
+}
+/*style for head*/
+.head{
+    width: 100%;height: 20vh;
+}
+.head header{
+    width: 100%;height: 100%;
+}
+/*style for logo in head*/
+.head header .logo{
+    width: 15%;height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.head header .logo span{
+    font-size: 30px;
+    padding: 5px;
+    color: #e2e2e4;
+    border: #c6c7ca 5px solid;
+    box-shadow:
+              0.5px 0.5px 3px 0.5px #c6c7ca88,
+              -0.5px -0.5px 20px 0.5px #c6c7ca88;
+               
+}
+
+/*style for nav in head*/
+.navbar{
+    width: 40%;height: 100%;
+    float: right;
+   
+}
+.navbar nav{
+    width: 100%;height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar nav ul li {
+   font-size: 18px;
+   list-style: none;
+   float: left;
+   padding:10px 40px;
+   margin: 0 10px;
+   border-bottom:1px solid #fff ;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   transition: .4s;
+}
+.navbar nav ul li:hover{
+   font-size: 22px;
+}
+.navbar nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+/*style for content */
+.content{
+    width: 100%;height: 80vh;
+}
+/*style for right in content*/
+.content .right{
+    width: 50%;height: 100%;
+    float: right;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content .right h1{
+    font-size: 30pt;
+}
+.content .right p{
+    font-size: 10pt;
+    text-align: center;
+}
+/*style for button*/
+.content .right span{
+    margin-top: 80px;
+    padding: 20px 120px;
+    border: 2px #fdffff solid;
+    box-shadow: 
+                inset 5px 5px 10px #2c4549,
+                inset -5px -5px 10px #2c4549,
+                5px 5px 10px #2c4549,
+                -5px -5px 10px #2c4549;
+    font-size: 30px;   
+}
+.content .right span:hover{
+    font-size: 35px;
+    cursor: pointer; 
+    background-color:#4fe8ff ;
+    color: #000;
+}
+/*style for left*/
+.content  .left{
+    float: left;
+    width: 50%;height: 100%;
+
+}
+.content  .left ul{
+    margin: 100px 20px;
+    list-style: none;
+}
+.content  .left ul li{
+    margin-top: 20px;
+}
+.content  .left ul li img{
+    width: 30px;
+    opacity: .5;
+}
+.content  .left ul li img:hover{
+    width: 35px;
+    opacity: 1;
+}
+
