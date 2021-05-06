@@ -1,9 +1,112 @@
 *{padding: 0;margin: 0;box-sizing: border-box;}/*Style for all auto*/
+/*loading*/
+.loading{
+    position: absolute;
+    width: 100%;height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#fff;
+    z-index: 99;
+    transition: .4s;
+    opacity: 1;
+   
+}
+.loading .text{
+    width: 100% ;height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.loading .text >div{
+    width: 60px ;height:60px;
+    margin-right: 10px;
+    border: 1px  #000 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    animation: lds-roller 2.2s infinite;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.308);
+}
+.loading .text >div:hover{
+    background-color: #000;
+    color: #fff;
+}
+.loading .text >div:nth-child(10){
+    animation-delay: -0.036s;
+}
+.loading .text >div:nth-child(9) {
+    animation-delay: -0.072s;
+}
+.loading .text >div:nth-child(8) {
+    animation-delay: -0.108s;;
+}
+.loading .text >div:nth-child(7){
+    animation-delay: -0.144s;
+}
+.loading .text >div:nth-child(6) {
+    animation-delay: -0.18s;
+}
+.loading .text >div:nth-child(5) {
+    animation-delay: -0.216s;
+}
+.loading .text >div:nth-child(4){
+    animation-delay: -0.252s;
+}
+.loading .text >div:nth-child(3) {
+    animation-delay: -0.288s;
+}
+.loading .text >div:nth-child(2) {
+    animation-delay: -0.325s;
+}
+.loading .text >div:nth-child(1) {
+    animation-delay: -0.350s;
+}
+
+@keyframes lds-roller {
+    0% {
+      transform: translateY(0px);
+
+    }
+    100% {
+      transform: translateY(-60px);
+      background-color: #000;
+      color: #fff;
+    }
+  }
+/*STYLE for moblie*/
+@media only screen and (max-width: 600px) {
+    .loading{
+        width: 90vw;
+    }
+    .loading .text{
+        width: fit-content;
+        transform: rotate(90deg);
+    }
+    .loading .text >div{
+        font-size: 30px;
+        width: 40px;height: 60px;
+    } 
+    .loading .text >div p{
+        transform: rotate(-90deg);
+    }
+    
+    
+}
+
+/*container*/
 .container{
     width: 100%;height: 100vh;
     background: url(./images/background-image.png);
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 /*style for head*/
 .head{
